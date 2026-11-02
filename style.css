@@ -1,0 +1,159 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #f5f7fb;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 8%;
+    background: #172554;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-btn, .btn {
+    background: #38bdf8;
+    color: #082f49;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 70px 8%;
+}
+
+.hero-content {
+    flex: 1 1 300px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    color: #172554;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    flex: 1 1 300px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 550px;
+    display: block;
+    border-radius: 15px;
+}
+
+/* Features */
+.features {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #172554;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    flex: 1 1 250px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: #0369a1;
+    margin-bottom: 12px;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 60px 20px;
+    background: #dbeafe;
+}
+
+.cta h2 {
+    color: #172554;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+}
+
+/* Footer */
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 45px 6%;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+}
